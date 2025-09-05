@@ -34,9 +34,9 @@ export default function PaymentPage({ setUserData }) {
 	// Subscription plans
 	const subscriptionPlans = {
 		mpesa: [
-			{ id: "daily", value: 200, label: "Daily VIP", price: "KSH 200" },
-			{ id: "weekly", value: 700, label: "7 Days VIP", price: "KSH 700" },
-			{ id: "monthly", value: 2000, label: "30 Days VIP", price: "KSH 2000" },
+			{ id: "daily", value: 250, label: "Daily VIP", price: "KSH 250" },
+			{ id: "weekly", value: 1000, label: "7 Days VIP", price: "KSH 1000" },
+			{ id: "monthly", value: 3000, label: "30 Days VIP", price: "KSH 3000" },
 			{ id: "yearly", value: 7500, label: "1 Year VIP", price: "KSH 7500" },
 		],
 		crypto: [
@@ -48,9 +48,9 @@ export default function PaymentPage({ setUserData }) {
 
 	const getSubscriptionPeriod = () => {
 		if (paymentType === "mpesa") {
-			if (price === 200) return "Daily";
-			if (price === 700) return "Weekly";
-			if (price === 2000) return "Monthly";
+			if (price === 250) return "Daily";
+			if (price === 1000) return "Weekly";
+			if (price === 3000) return "Monthly";
 			return "Yearly";
 		} else {
 			if (price === 10) return "Weekly";
@@ -85,7 +85,7 @@ export default function PaymentPage({ setUserData }) {
 		reference: new Date().getTime().toString(),
 		email: currentUser.email,
 		amount: price * 100,
-		publicKey: "pk_live_71bf88a41666c28d7e035b7086eddedda3ba8c47",
+		publicKey: "pk_live_ec866ff1c59f831bbf7af1c50511a4a326ef1cda",
 		currency: "KES",
 		metadata: { name: currentUser.email },
 		text: "Pay Now",

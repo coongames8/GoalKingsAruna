@@ -32,39 +32,39 @@ export default function About() {
   ];
 
   return (
-    <div className='about-container'>
-      <AppHelmet title={"About"} location={'/about'} />
+		<div className="about-container">
+			<AppHelmet title={"About"} location={"/about"} />
 
-      <div className="about-hero">
-        <h1 className="hero-title">About Win11</h1>
-        <p className="hero-subtitle">Your trusted source for football predictions and insights</p>
-      </div>
+			<div className="about-hero">
+				<h1 className="hero-title">About Goal Kings</h1>
+				<p className="hero-subtitle">
+					Your trusted source for football predictions and insights
+				</p>
+			</div>
 
-      <div className="about-sections">
-        {sections.map((section, index) => (
-          <div key={index} className="about-card">
-            <h2 className="section-title">{section.title}</h2>
-            <p className="section-content">{section.content}</p>
-          </div>
-        ))}
-      </div>
+			<div className="about-sections">
+				{sections.map((section, index) => (
+					<div key={index} className="about-card">
+						<h2 className="section-title">{section.title}</h2>
+						<p className="section-content">{section.content}</p>
+					</div>
+				))}
+			</div>
 
-      <div className="faqs-section">
-        <div className="section-header">
-          <h1 className="faq-title">Frequently Asked Questions</h1>
-          <p className="faq-subtitle">Answers to common questions about our service</p>
-        </div>
+			<div className="faqs-section">
+				<div className="section-header">
+					<h1 className="faq-title">Frequently Asked Questions</h1>
+					<p className="faq-subtitle">
+						Answers to common questions about our service
+					</p>
+				</div>
 
-        <div className="faqs-grid">
-          {faqs.map(faq => (
-            <FaqItem
-              key={faq.id}
-              question={faq.question}
-              answer={faq.answer}
-            />
-          ))}
-        </div>
-      </div>
-    </div>
-  )
+				<div className="faqs-grid">
+					{faqs.map((faq) => (
+						<FaqItem key={faq.id} question={faq.question} answer={faq.answer} />
+					))}
+				</div>
+			</div>
+		</div>
+	);
 }
