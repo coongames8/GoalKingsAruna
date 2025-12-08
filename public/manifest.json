@@ -3,7 +3,7 @@
 	"name": "Goal Kings",
 	"homepage": "https://goalkings.live",
 	"version": "0.1.0",
-	"description": "Get all the latest ✓Football Predictions, ✓Latest Football Betting Odds and livescores, results & fixtures for all leagues and competitions, including the Premier League, Championship and across the world.",
+	"description": "Get all the latest football insights, match analysis, live scores, results, and fixtures for leagues and competitions worldwide.",
 	"icons": [
 		{
 			"src": "favicon.ico",
@@ -74,9 +74,9 @@
 	],
 	"shortcuts": [
 		{
-			"name": "Get VIP Tips",
-			"short_name": "VIP Tips",
-			"description": "Access the latest fixed VIP tips and predictions.",
+			"name": "Today's Fixtures",
+			"short_name": "Analysis",
+			"description": "Access the latest football insights and match analysis.",
 			"url": "/",
 			"icons": [
 				{
@@ -87,9 +87,9 @@
 			]
 		},
 		{
-			"name": "Today's Predictions",
-			"short_name": "Today's Tips",
-			"description": "Check for toda's VIP Tips.",
+			"name": "Today's Insights",
+			"short_name": "Insights",
+			"description": "View today's football insights and analytics.",
 			"url": "/",
 			"icons": [
 				{
@@ -115,27 +115,22 @@
 	},
 	"license": "ISC/MIT",
 	"keywords": [
-		"Football Predictions",
-		"Betting Odds",
+		"Football Analysis",
+		"Match Insights",
 		"Live Scores",
-		"Betika",
-		"Sportpesa",
-		"365Bet",
-		"Live Sports",
+		"Sports Data",
 		"Football Results",
 		"Football Fixtures",
 		"Football Today",
-		"Online Betting",
 		"Sports",
-		"Odibets",
 		"Premier League",
 		"Championship",
 		"Super Sports",
 		"Laliga",
 		"Bundesliga",
 		"Serie A",
-		"Live Bet",
-		"Casino"
+		"Live Sports Updates",
+		"Match Highlights"
 	],
 	"dir": "ltr",
 	"lang": "en",
@@ -148,12 +143,10 @@
 	"categories": [
 		"Utilities",
 		"Sports",
-		"Betting",
 		"Productivity",
 		"Social",
 		"News",
-		"Tools",
-		"Gambling"
+		"Tools"
 	],
 	"related_applications": [
 		{
