@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react';
-import './UserProfile.scss';
-import { NavLink, useLocation } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import "./UserProfile.scss";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function UserProfile({ data }) {
   const location = useLocation();
@@ -8,22 +8,22 @@ export default function UserProfile({ data }) {
 
   useEffect(() => {
     if (location.state) {
-      setUser(location.state)
+      setUser(location.state);
     } else {
-      setUser(data)
+      setUser(data);
     }
   }, [location]);
 
   const transactions = [
     {
       id: 1,
-      name: 'American Eagle',
-      category: 'Clothes & Fashion',
-      amount: '-39.99 USD',
-      time: '4.27pm',
-      card: '•••• 6890',
-      refId: '3125-568911',
-      iconStyle: { backgroundColor: '#f2dcbb' },
+      name: "American Eagle",
+      category: "Clothes & Fashion",
+      amount: "-39.99 USD",
+      time: "4.27pm",
+      card: "•••• 6890",
+      refId: "3125-568911",
+      iconStyle: { backgroundColor: "#f2dcbb" },
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
           <path
@@ -39,11 +39,11 @@ export default function UserProfile({ data }) {
     },
     {
       id: 2,
-      name: 'From Håvard Brynjulfsen',
-      category: 'Gift',
-      amount: '+50.00 USD',
-      time: '8.14am',
-      refId: '3125-568912',
+      name: "From Håvard Brynjulfsen",
+      category: "Gift",
+      amount: "+50.00 USD",
+      time: "8.14am",
+      refId: "3125-568912",
       iconStyle: {},
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
@@ -57,24 +57,33 @@ export default function UserProfile({ data }) {
 
   return (
     <div className="user-profile">
-      {user && <div className="user-header">
-        <div className="uh-left">
-          <div className="uh-image">
-            <img src="https://i.imgur.com/Qv1WDJq.jpg" alt="Profile" />
-            <div className="gradient"></div>
+      {user && (
+        <div className="user-header">
+          <div className="uh-left">
+            <div className="uh-image">
+              <img src="https://i.imgur.com/Qv1WDJq.jpg" alt="Profile" />
+              <div className="gradient"></div>
+            </div>
+          </div>
+          <div className="user-links">
+            <span>
+              <a>@{user.username}</a>
+            </span>
+            <span>
+              {user.isPremium ? (
+                <a>PREMIUM MEMBER</a>
+              ) : (
+                <NavLink className="btn" to="/pay">
+                  GET PREMIUM MEMBERSHIP
+                </NavLink>
+              )}
+              <NavLink to="/users-edit" className="btn" state={user}>
+                Edit
+              </NavLink>
+            </span>
           </div>
         </div>
-        <div className="user-links">
-          <span><a>@{user.username}</a></span>
-          <span>
-            {
-              user.isPremium ? <a>VIP</a> : <NavLink className="btn" to='/pay'>GET VIP</NavLink>
-            }
-            <NavLink to="/users-edit" className="btn" state={user}>Edit</NavLink>
-          </span>
-
-        </div>
-      </div>}
+      )}
       <section>
         <h2>Transaction History</h2>
 
@@ -111,11 +120,12 @@ export default function UserProfile({ data }) {
           </details>
         ))}*/}
         <h1>COMING SOON</h1>
-
       </section>
-      <div className="explore"><NavLink to="/" className="btn">EXPLORE</NavLink></div>
-
-
+      <div className="explore">
+        <NavLink to="/" className="btn">
+          EXPLORE
+        </NavLink>
+      </div>
     </div>
   );
 }

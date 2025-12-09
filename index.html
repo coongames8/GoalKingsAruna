@@ -1,70 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="/favicon.ico" />
-  <!--Include favicon links for multiple resolutions-->
-  <link rel="icon" type="image/png" sizes="32x32" href="/logo32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/logo16.png" />
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo16.png" />
 
-  <link rel="apple-touch-icon" href="/logo192.png" />
-  <link rel="manifest" href="/manifest.json" crossorigin="anonymous" />
-  <link rel="shortcut icon" type="image/x-icon" href="/logo512.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <meta name="theme-color" content="#00BFFF">
-  <meta name="description" content="Get all the latest ✓Fixed VIP Tips ✓Football Predictions, ✓Latest Football Betting Odds and livescores, results & fixtures for all leagues and competitions, including the Premier League, Championship and across the world." />
-  <meta name="keywords" content="Football Predictions, Betting Odds, Live Scores, Live Sports, Football Results, Football Fixtures, Football Today, Premier League, Championship, Super Sports, Laliga, Bundesliga, Serie A">
-				<meta name="author" content="Goal Kings">
-  <link rel="canonical" href="/" />
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="120x120" href="/logo120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/logo152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo180.png" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
 
-  <!-- Open Graph -->
-				<meta property="og:title" content="Goal Kings" />
-  <meta property="og:description" content="Get all the latest ✓Fixed VIP Tips ✓Football Predictions, ✓Latest Football Betting Odds and livescores, results & fixtures for all leagues and competitions." />
-  <meta property="og:image" content="/logo512.png" />
-				<meta property="og:url" content="https://goalkings.live" />
-  <meta property="og:type" content="website" />
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json" crossorigin="anonymous" />
+    <link rel="shortcut icon" type="image/x-icon" href="/logo512.png" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-				<meta name="twitter:title" content="Goal Kings" />
-  <meta name="twitter:description" content="Get all the latest ✓Fixed VIP Tips ✓Football Predictions, ✓Latest Football Betting Odds and livescores, results & fixtures for all leagues and competitions." />
-  <meta name="twitter:image" content="/logo512.png" />
+    <!-- Viewport -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
 
-  <!-- iOS -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-				<meta name="apple-mobile-web-app-title" content="Goal Kings" />
+    <!-- Theme -->
+    <meta name="theme-color" content="#00BFFF" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="mobile-web-app-capable" content="yes" />
 
-  <!--Add icons for various Apple device sizes-->
-  <link rel="apple-touch-icon" sizes="120x120" href="/logo120.png" />
-  <link rel="apple-touch-icon" sizes="152x152" href="/logo152.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/logo180.png" />
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Goal Kings provides football insights, match analysis, live scores, results, fixtures and data-driven updates for leagues worldwide including the Premier League, La Liga, Bundesliga and more."
+    />
 
-  <!--Control how search engines index your page-->
-  <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="Football Insights, Match Analysis, Live Scores, Football Results, Football Fixtures, Premier League, Laliga, Bundesliga, Serie A, Sports Data"
+    />
 
-  <!--If your site supports multiple languages, add alternate links-->
-				<link rel="alternate" href="https://goalkings.live" hreflang="en" />
-				<title>Goal Kings</title>
-  <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
-  <meta name="google-adsense-account" content="ca-pub-9576945242972545">
-</head>
+    <meta name="author" content="Goal Kings" />
+    <link rel="canonical" href="https://goalkings.live" />
 
-<body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./service-worker.js')
-        .then(registration => {}).catch(error => {
-          console.error('Service Worker registration failed:', error);
-        });
-    }
-  </script>
-  <script type="text/jsx" src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
-  <script type="text/jsx" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  <script type="text/jsx" src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
-</body>
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Goal Kings - Football Insights & Match Analysis"
+    />
+    <meta
+      property="og:description"
+      content="Access expert-level football insights, match analysis, live scores and breakdowns for major leagues and competitions worldwide."
+    />
+    <meta property="og:image" content="/logo512.png" />
+    <meta property="og:url" content="https://goalkings.live" />
+    <meta property="og:type" content="website" />
 
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Goal Kings - Football Insights" />
+    <meta
+      name="twitter:description"
+      content="Get real-time football insights, match analysis, live scores, results and fixtures for major leagues worldwide."
+    />
+    <meta name="twitter:image" content="/logo512.png" />
+
+    <!-- Search Engines -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Language Alternate -->
+    <link rel="alternate" href="https://goalkings.live" hreflang="en" />
+
+    <!-- PayPal (Donation) -->
+    <script
+      src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js"
+      charset="UTF-8"
+    ></script>
+
+    <!-- Google AdSense -->
+    <meta name="google-adsense-account" content="ca-pub-9576945242972545" />
+
+    <title>Goal Kings</title>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- Vite React Entry -->
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Service Worker -->
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("/service-worker.js")
+          .catch((err) => console.error("Service Worker Error:", err));
+      }
+    </script>
+  </body>
 </html>
